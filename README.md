@@ -1,4 +1,5 @@
 # MediaTester
+翻译文件在**MediaTesterGui/Main.resx**
 MediaTester can test any media (SD, microSD, thumb drives, memory sticks, etc.)
 and verify it stores the expected number of bytes. The testing method is similar
 to h2testw but MediaTester can detect fake or defective media much faster by
