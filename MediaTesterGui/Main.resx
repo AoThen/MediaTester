@@ -1353,7 +1353,7 @@ Will not write anything to media.</value>
     <value>6</value>
   </data>
   <data name="WriteAndVerifyButton.Text" xml:space="preserve">
-    <value>Write and Verify</value>
+    <value>写后验证</value>
   </data>
   <data name="WriteAndVerifyButton.ToolTip" xml:space="preserve">
     <value>Write test data to media then read back to verify data was stored correctly.
