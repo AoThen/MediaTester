@@ -923,7 +923,7 @@ Enabling this will detect common failures much faster.
     <value>1</value>
   </data>
   <data name="ReadAverageLabel.Text" xml:space="preserve">
-    <value>读取平均值</value>
+    <value>读平均</value>
   </data>
   <data name="ReadBytesPerSecondStatusLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>16, 17</value>
@@ -1376,7 +1376,7 @@ Non-destructive.</value>
     <value>0</value>
   </data>
   <data name="WriteAverageLabel.Text" xml:space="preserve">
-    <value>写入平均值</value>
+    <value>写平均</value>
   </data>
   <data name="WriteBytesPerSecondStatusLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>16, 17</value>
