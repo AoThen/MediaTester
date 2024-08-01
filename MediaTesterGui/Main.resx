@@ -688,7 +688,7 @@
     <value>4</value>
   </data>
   <data name="AboutButton.Text" xml:space="preserve">
-    <value>About</value>
+    <value>关于</value>
   </data>
   <data name="AboutButton.ToolTip" xml:space="preserve">
     <value>Show the about and copyright dialog.</value>
