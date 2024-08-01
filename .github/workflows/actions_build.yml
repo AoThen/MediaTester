@@ -12,10 +12,10 @@ jobs:
 
     steps:
     - name: Pull code from git
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4.1.7
 
     - name: Setup MSBuild
-      uses: microsoft/setup-msbuild@v1.1
+      uses: microsoft/setup-msbuild@v2
         
 #    - name: Setup .NET
 #      uses: actions/setup-dotnet@v2
@@ -50,20 +50,20 @@ jobs:
         echo "CLI_VER=$((Get-Item -Path '_output\MediaTesterCli\MediaTester.exe').VersionInfo.ProductVersion)" >> $Env:GITHUB_ENV
         echo "GUI_VER=$((Get-Item -Path '_output\MediaTesterGui\MediaTesterGui.exe').VersionInfo.ProductVersion)" >> $Env:GITHUB_ENV
 
-    - name: Create artifact - MediaTesterLib-v${{ env.LIB_VER }}
-      uses: actions/upload-artifact@v3
-      with:
-        name: MediaTesterLib-${{ env.LIB_VER }}
-        path: _output/MediaTesterLib/*
+    # - name: Create artifact - MediaTesterLib-v${{ env.LIB_VER }}
+    #   uses: actions/upload-artifact@v3
+    #   with:
+    #     name: MediaTesterLib-${{ env.LIB_VER }}
+    #     path: _output/MediaTesterLib/*
 
-    - name: Create artifact - MediaTesterCli-v${{ env.CLI_VER }}
-      uses: actions/upload-artifact@v3
-      with:
-        name: MediaTesterCli-${{ env.CLI_VER }}
-        path: _output/MediaTesterCli/*
+    # - name: Create artifact - MediaTesterCli-v${{ env.CLI_VER }}
+    #   uses: actions/upload-artifact@v3
+    #   with:
+    #     name: MediaTesterCli-${{ env.CLI_VER }}
+    #     path: _output/MediaTesterCli/*
 
     - name: Create artifact - MediaTesterGui-v${{ env.GUI_VER }}
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4.3.4
       with:
         name: MediaTesterGui-${{ env.GUI_VER }}
         path: _output/MediaTesterGui/*
